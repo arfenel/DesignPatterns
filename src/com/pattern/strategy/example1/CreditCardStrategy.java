@@ -1,14 +1,14 @@
-package com.pattern.strategy;
+package com.pattern.strategy.example1;
 
-public class DebitCardStrategy extends Card {
+public class CreditCardStrategy extends Card {
 
-	public DebitCardStrategy(String nm, String ccNum, String cvv, String expiryDate) {
+	public CreditCardStrategy(String nm, String ccNum, String cvv, String expiryDate) {
 		super(nm, ccNum, cvv, expiryDate);
 	}
 
 	@Override
 	protected String getType() {
-		return "debit";
+		return "credit";
 	}
 
 	@Override
